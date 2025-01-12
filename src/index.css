@@ -1,0 +1,113 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #333;
+  color: hsl(200, 100%, 90%);
+  margin: 0 auto;
+  place-items: center;
+  min-width: 400px;
+  padding: 1rem;
+
+}
+
+.new-item-form{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5;
+  margin: 10px;
+}
+
+.form-row{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5;
+  margin-bottom: 10px;
+}
+
+
+button:hover {
+  border-color: #646cff;
+}
+btn:focus,
+btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  background: hsl(200, 100%, 50%, 0.2);
+}
+
+
+.btn.btn-danger {
+  background-color: #ff4d4f;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-danger:hover {
+  background-color: #e43e3e;
+}
+
+.delete-btn:active {
+  background-color: #cc3535;
+}
+
+
+.new-tem-form input{
+  outline: none;
+  border: 1px solid hsl(200, 100%, 50%, 0.2);
+  background: hsl(200, 100% 30%);
+  
+}
+
+.header{
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  list-style: none;
+}
+.list li label :hoover::before{
+  background: hsl(200, 100%, 80%);
+}
+.list li:has(input:checked) label {
+  color: hsl(200, 20%, 40%);
+}
+
+
+
+
+.list li:has(input:checked) label:hover::before {
+  background: hsl(200, 100%, 30%);
+}
+
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
